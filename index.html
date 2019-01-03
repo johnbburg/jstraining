@@ -20,42 +20,30 @@
         }
     }
 
-
-
     let concatFruitObjects = function(fruits, fruit) {
         return fruits.concat([fruit]);
     }
 
 
-
-
     let displayTotalNumber = function(fruits) {
         let sum = fruits.reduce( (accum, current) => {
-                console.log('acc ', accum, 'cur',current)
-        console.log(accum+current.quantity);
-        return accum+current.quantity;
-    }, 0);
-
-
-        console.log(sum);
+            return accum+current.quantity;
+        }, 0);
         return sum;
     }
 
 
-
     let calculateTaxRate = function(fruit) {
         let sum = fruits.reduce( (accum, current) => {
-                console.log('acc ', accum, 'cur',current)
-        console.log(accum+current.quantity);
-        return accum+(current.quantity * current.price);
-    }, 0);
+            return accum+(current.quantity * current.price);
+        }, 0);
 
         let tax = sum * 0.45;
         console.log(tax);
     return tax;
     }
 
-    
+
 
     // Three fruits
     let fruits = [];
@@ -69,8 +57,8 @@
     fruits = concatFruitObjects(fruits, createFruit(4, 'Pear', 0.1, 1, 4));
     fruits = concatFruitObjects(fruits, createFruit(5, 'Dragonfruit', 1, 5, 1));
 
-    displayTotalNumber(fruits);
-    calculateTaxRate(fruits);
+    console.log("Total: " +displayTotalNumber(fruits));
+    console.log("Tax: " +calculateTaxRate(fruits));
 
 </script>
 </body>
