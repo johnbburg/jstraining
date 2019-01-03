@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+
+<div>A</div>
+<div>B</div>
+<div>C</div>
+<div>D</div>
+
+
+<script>
+    'use strict';
+
+    // Array destructuring.
+
+    const first = "bob";
+
+    const prop = 'lastName';
+
+    const person = {
+        // Shorthand property
+        first,
+        // computed property, the value becomes the property name.
+        [last]: 'Smith',
+        age: 23,
+        fetFullName : function() {
+            console.log(first+last);
+        }
+    }
+
+
+    person,getFullName; // would be undefined if we had used an arrow function.
+
+
+    
+
+</script>
+</body>
+</html>

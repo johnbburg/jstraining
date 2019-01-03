@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+
+<div>A</div>
+
+<div>A</div>
+<div>A</div>
+<div>A</div>
+
+
+<script>
+    'use strict';
+
+    var nums = [1,2,3,4,5]
+
+
+    console.log(nums);
+
+    console.log(nums[0]);
+
+    console.log(nums[10]);
+
+
+    nums[10]= 'awevear';
+
+    console.log(nums);
+
+    for(let x =0; x<nums.length; x++) {
+        console.log(x + ' => ' + nums[x]);
+    }
+
+
+    const nums2 = new Array(10,20);
+    console.log(nums2);
+
+
+
+    console.log(Array.isArray(document.querySelectorAll('div')));
+
+const nodeList = document.querySelectorAll('div');
+
+const nodeArray = Array.from(nodeList);
+
+console.dir(nodeList);
+console.dir(nodeArray);
+
+
+
+</script>
+</body>
+</html>

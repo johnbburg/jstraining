@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+
+<div>A</div>
+<div>B</div>
+<div>C</div>
+<div>D</div>
+
+
+<script>
+    'use strict';
+
+    // Array destructuring.
+
+    const nums = [1,2,3,4,5];
+
+    const [first, bob, ...rest] = nums;
+
+
+    console.log(first);
+    console.log(bob);
+    console.log(rest);
+
+    function doIt([first, second]){
+        console.log(first, second);
+    }
+
+
+
+    doIt(nums);
+
+</script>
+</body>
+</html>

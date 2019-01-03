@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+<script>
+
+    // a, b, c are parameters. Must always be a JavaScript variable.
+  function doIt(a,b, ...c){
+      console.log(a,b,c); // c is a "Rest parameter"
+
+  //      console.log('arguments');
+//      console.log(arguments); // arguments object is not used anymore.
+
+
+  }
+
+
+  // 1,2 are arguments. Must always be a valid JS expression.
+  doIt([1,2,4,5]);
+  console.log('spread');
+  doIt(...[1,2,4,5]);// spread operator
+
+    // Oldskool "function declaration"
+ /*   function doIt() {
+        console.log('Test');
+    }
+
+
+    // "Function Expressions"
+    const doIt2 = function() {
+        console.log("Did it too");
+    }
+    // Not an anonymous function.
+    // function operator still here.
+
+    // "Function Expressions"
+    const doIt2 = function() {
+        console.log("Did it too");
+    }
+*/
+
+</script>
+</body>
+</html>

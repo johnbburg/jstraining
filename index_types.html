@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+<script>
+    console.log("Hello world");
+
+    var message = "tex";
+
+    console.log(typeof message);
+
+
+    message = 1;
+    console.log(typeof message);
+
+    message = true;
+    console.log(typeof message);
+
+    message = Symbol('A symbol');
+    console.log(typeof message);
+
+    message = null;
+    console.log(typeof message);
+
+
+    // Object literal
+    message = {
+        importance: 'High',
+        code: 12,
+        content: "Hello World"
+    };
+    console.log(typeof message);
+
+
+    message = [1, 'test', ];
+    console.log(typeof message);
+
+    message = function() {
+        console.log("hello");
+    }
+    console.log(typeof message);
+    console.dir(message);
+
+    var messages;
+    console.log(typeof messages);
+
+</script>
+</body>
+</html>

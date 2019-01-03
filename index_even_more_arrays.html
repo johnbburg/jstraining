@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+
+<div>A</div>
+<div>B</div>
+<div>C</div>
+<div>D</div>
+
+
+<script>
+    'use strict';
+
+    let nums = [1,2,3,4,5];
+
+    const doublenums = nums.reduce((acc, cur) => {
+        acc.push(cur*2);
+        return acc;
+    }, []);
+
+
+    console.log(doublenums);
+
+
+    // transrorming values into a new array
+    nums.map(nums => nums * 2);
+
+
+    // Error?
+    const numGTE3 = nums.reduce( (acc, cur) => {
+        if (cur >= 3) {
+            acc.push(cur);
+        }
+        return acc;
+    }, []);
+
+
+
+    const numsGTE3_2 = nums.filter(num => num >= 3);
+
+
+    console.log(numsGTE3_2);
+
+
+
+</script>
+</body>
+</html>

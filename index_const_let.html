@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+<script>
+
+    //console.log(t);
+    // Use const always if you don't plan on changing it.
+    const l = 2;
+//    l = 3;  // Error
+
+
+    // Change detection.
+    // Functions are an object on the heap.
+    function doIt() {
+        const t = 2;
+
+        // Can change properties, not the pointer.
+        const p = {
+            fn:"bob", ln:"smith"
+        }
+
+        //p = 2; // error.
+        console.log(t);
+        console.log(p);
+    }
+
+
+    doIt();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+
+<div>A</div>
+
+<div>A</div>
+<div>A</div>
+<div>A</div>
+
+
+<script>
+    'use strict';
+
+    let nums = [1,2,3,4,5];
+
+    let sum = 0;
+
+    for (let x = 0; x<nums.length; x++) {
+        console.log(nums[x]);
+
+        sum = sum+nums[x];
+    }
+
+/*
+    // Don't do this.
+    // forEach is meant for side effect operations. console.logs, affecting externals systems.
+    nums.forEach(num => {
+       console.log(num);
+
+       sum = sum+sum;
+    });
+*/
+
+    // Do this.
+
+    sum = nums.reduce( (accum, current) => {
+        console.log('acc ', accum, 'cur',current);
+        return accum+current;
+        }, 0);
+
+
+
+    // Another syntax
+    // "for of loop." for "Iterable" types.
+    for (let num of nums) {
+        console.log(nums);
+    }
+
+
+
+    // generator function
+    // Sends yield to calling function. then picks back up where it left.
+    function* myNums() {
+        console.log('myNums');
+        yield 1;
+        console.log('myNums');
+        yield 2;
+        console.log('myNums');
+        yield 3;
+        console.log('myNums');
+        yield 4;
+    }
+
+
+    for (let num of myNums()) {
+        console.log(num);
+    }
+
+
+
+</script>
+</body>
+</html>

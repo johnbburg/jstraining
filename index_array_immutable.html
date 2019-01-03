@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Advanced JS Class</title>
+</head>
+<body>
+
+<div>A</div>
+<div>B</div>
+<div>C</div>
+<div>D</div>
+
+
+<script>
+    'use strict';
+
+    const nums = [1,2,3,4,5];
+
+//    let newleng = nums.push(6);
+
+    let newNums = nums.concat(6);
+
+    console.log(nums);
+    console.log(newNums);
+    console.log(nums === newNums);
+
+    nums = [0].concat(nums);
+
+    let moreNums = nums.slice(1);
+
+
+
+//    array spread operator.
+    // ???
+       nums = [...nums.slice(0,1), 9, ...nums.slice(4)];
+
+//    let valRemoved = nums.pop();
+
+    //console.log(nums);
+//    console.log(valRemoved);
+
+//    let newLen = nums.unshift(0);
+
+    //console.log(nums);
+  //  console.log(newLen);
+
+
+
+    // shift
+
+
+    // splice
+
+
+    //
+
+    // All these functions mutate the underlying array.
+
+    // How do we know when the array changes?
+
+    // Use immutable operations.
+
+    
+
+    // Array destructuring.
+
+
+
+</script>
+</body>
+</html>
