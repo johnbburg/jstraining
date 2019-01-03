@@ -6,17 +6,8 @@
 </head>
 <body>
 
-<div>A</div>
-<div>B</div>
-<div>C</div>
-<div>D</div>
-
-
 <script>
     'use strict';
-
-    // Array destructuring.
-
 
     let createFruit = function(...params) {
         console.log(params);
@@ -64,10 +55,9 @@
     return tax;
     }
 
+    
 
-
-
-    // Main function
+    // Three fruits
     let fruits = [];
     fruits = concatFruitObjects(fruits, createFruit(1, 'Banana', 0.1, 10, 1));
     fruits = concatFruitObjects(fruits, createFruit(2, 'Apple', 0.2, 0.5, 6));
@@ -75,7 +65,7 @@
 
 
 
-
+    // two more
     fruits = concatFruitObjects(fruits, createFruit(4, 'Pear', 0.1, 1, 4));
     fruits = concatFruitObjects(fruits, createFruit(5, 'Dragonfruit', 1, 5, 1));
 
